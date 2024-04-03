@@ -1,54 +1,91 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, inicial-scale=1">
-    <meta name="description" content="Página de Portifólio da Escola de Programadores - Mago">
-    <meta name="keyword" content="HTML, CSS, JavaScript, Escola de Programadores">
-    <meta name="author" content="Mago">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title></title>
+        <title>Site do Mago</title>
 
-    <link rel="icon" type="image/x-icon" href="img/LOGO.png">
+        <style>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="containerHeader">
+                <img class="logoSite" src="img/escola-de-programadores.png">
+                <nav class="containerButtons">
+                    <a class="buttonHeader" href="#apresentacao">Apresentação</a>
+                    <a class="buttonHeader" href="#skills">Skills</a>
+                    <a class="buttonHeader" href="#contato">Contato</a>
+                </nav>
+            </div>
+        </header>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
-    <section>
-      <div class="menuPrincipal">
-          <a href="https://melhoreseusresultados.com.br">
-            <img width="50px" height="50px" src="img/LOGO.png" alt="Logo Escola de Programadores - A logo consiste em um cajado, um chapéu e o simbolo de codificação">
-          </a>
-          <div class="menuPrincpalBotoes">
-            <a class="botaoMenuPrincipal" href="#sobreMim">Sobre Mim</a>
-            <a class="botaoMenuPrincipal" href="#currisulo">Curriculo</a>
-            <a class="botaoMenuPrincipal" href="#contato">Contato</a>
-          </div>
-      </div>
-    </section>
+        <main>
+            <section title="Apresentação">
+                <div id="apresentacao">
+                    <div>
+                        <h1>Mago</h1>
+                        <p>Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
+                    </div>
+                    <img src="img/personagens_gestao.webp">
+                </div>
+            </section>
 
-    <section>
-      <div id="sobreMim" class="container-sobre-mim">
-        <h1>Mago</h1>
-        <p class="textoSobreMim">Eu me chamo Mago, <strong>sou</strong> professor de Desenvolvimento WEB pela Faculdade Uníntese, já trabalhei como desenvolvedor front-end para a Mormaii e para a página Bingo Premiado.</p>
-        <img width="300px" height="300px" src="img/IMG_1490.png" alt="O Mago sentado em sua sala preparando a aula de Desenvolvimento Web">
-      </div>
-    </section>
+            <section title="skills">
+                <div id="skills">
+                    <h2>Skills</h2>
+                    <div>
+                        <img src="img/logo_html.png">
+                        <h3>HTML</h3>
+                    </div>
 
-    <section>
-      <div id="curriculo">
-        <a href=""></a>
-      </div>
-    </section>
+                    <div>
+                        <img src="img/logo_html.png">
+                        <h3>CSS</h3>
+                    </div>
 
-    <section>
-      <div id="skills">
+                    <div>
+                        <img src="img/logo_html.png">
+                        <h3>JavaScript</h3>
+                    </div>
 
-      </div>
-    </section>
-  </body>
+                    <div>
+                        <img src="img/logo_html.png">
+                        <h3>Wordpress</h3>
+                    </div>
+                </div>
+            </section>
+
+            <section title="Contato">
+                <div id="contato">
+                    <p>Preencha o formulário e entrarei em contato</p>
+                    <div>
+
+                        <form>
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome"/>
+
+                            <label for="email">E-mail:</label>
+                            <input type="email" name="email"/>
+
+                            <label for="numero">Telefone:</label>
+                            <input type="phone" name="numero"/>
+
+                            <button type="submit">Enviar</button>
+                        </form>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div>
+                <a href="https://github.com/MagoUnintese" target="_blank"><img src="img/logo_github.png"></a>
+                <a href="mailto:mago.unintese@gmail.com">mago.unintese@gmail.com</a>
+            </div>
+        </footer>
+    </body>
 </html>
