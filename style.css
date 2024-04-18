@@ -56,7 +56,6 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 2% 10%;
     gap: 40px;
 }
 
@@ -64,7 +63,7 @@ body{
     width: 750px;
 }
 
-#apresentacao h1 {
+.tituloBloco{
     font-size: 2.5rem;
     color: var(--white-300);
     font-weight: bold;
@@ -74,4 +73,25 @@ body{
 #apresentacao p {
     font-size: 1.4rem;
     color: var(--white-300);
+}
+
+.marginContainer{
+    margin: 3% 17%;
+}
+
+.skillContainer{
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+.skill{
+    padding: 10px 48.7px;
+    border: 2px solid;
+    border-radius: 10px;
+}
+
+.skill h3{
+    color: var(--white-300);
+    text-align: center;
 }
