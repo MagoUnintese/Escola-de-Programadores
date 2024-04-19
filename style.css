@@ -180,3 +180,15 @@ footer a{
     color: var(--white-300);
     text-decoration: none;
 }
+
+@media (max-width: 767px){
+    .containerButtons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button{
+        font-size: 0.9rem;
+        margin: 10px 0;
+    }
+}
