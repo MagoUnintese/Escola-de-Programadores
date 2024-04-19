@@ -25,9 +25,9 @@
                 <div class="containerHeader">
                     <img class="logoSite" src="img/escola-de-programadores.png">
                     <nav class="containerButtons">
-                        <a class="buttonHeader" href="#apresentacao">Apresentação</a>
-                        <a class="buttonHeader" href="#skills">Skills</a>
-                        <a class="buttonHeader" href="#contato">Contato</a>
+                        <a class="button" href="#apresentacao">Apresentação</a>
+                        <a class="button" href="#skills">Skills</a>
+                        <a class="button" href="#contato">Contato</a>
                     </nav>
                 </div>
             </div>
@@ -38,7 +38,7 @@
                 <div id="apresentacao" class="marginContainer">
                     <div>
                         <h1 class="tituloBloco">Mago</h1>
-                        <p>Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
+                        <p class="paragrafo">Se você está em busca de alguém capaz de tornar suas visões online em verdadeiras obras-primas digitais, você está no lugar certo. Sou o Mago do Desenvolvimento Web, e minha paixão é transformar conceitos abstratos em experiências digitais tangíveis.</p>
                     </div>
                     <img width="500px" src="img/personagens_gestao.webp">
                 </div>
@@ -49,22 +49,22 @@
                     <h2 class="tituloBloco">Skills</h2>
 
                     <div class="skillContainer">
-                        <div class="skill">
+                        <div class="skill htmlColorBorder">
                             <img src="img/logo_html.png">
                             <h3>HTML</h3>
                         </div>
 
-                        <div class="skill">
+                        <div class="skill cssColorBorder">
                             <img src="img/logo_html.png">
                             <h3>CSS</h3>
                         </div>
 
-                        <div class="skill"> 
+                        <div class="skill jsColorBorder"> 
                             <img src="img/logo_html.png">
                             <h3>JavaScript</h3>
                         </div>
 
-                        <div class="skill">
+                        <div class="skill wpColorBorder">
                             <img src="img/logo_html.png">
                             <h3>Wordpress</h3>
                         </div>
@@ -75,23 +75,20 @@
             <section title="Contato">
                 <div id="contato" class="marginContainer">
                     <h2 class="tituloBloco">Contato</h2>
-                    <p>Preencha o formulário e entrarei em contato</p>
-                    <div>
+                    <p class="paragrafo">Preencha o formulário e entrarei em contato</p>
+                    
+                    <form class="formularioContato">
 
-                        <form>
-                            <label for="nome">Nome:</label>
-                            <input type="text" name="nome"/>
+                        <input type="text" name="nome" placeholder="Digite seu nome."/>
 
-                            <label for="email">E-mail:</label>
-                            <input type="email" name="email"/>
+                        <input type="email" name="email" placeholder="E-mail."/>
 
-                            <label for="numero">Telefone:</label>
-                            <input type="phone" name="numero"/>
+                        <input type="phone" name="numero" placeholder="Telefone com DDD."/>
 
-                            <button type="submit">Enviar</button>
-                        </form>
+                        <textarea placeholder="Escreva seu assunto."></textarea>
 
-                    </div>
+                        <button class="button" type="submit">Enviar</button>
+                    </form>
                 </div>
             </section>
         </main>

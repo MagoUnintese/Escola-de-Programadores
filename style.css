@@ -6,6 +6,11 @@
     --purple-200: #A369FF;
     --purple-300: #8733FF;
     --purple-500: #5A13B4;
+
+    --html: #DB4E26;
+    --css: #2862EA;
+    --js: #E2C431;
+    --wp: #207196;
 }
 
 *{
@@ -35,7 +40,7 @@ body{
     height: 150px;
 }
 
-.buttonHeader{
+.button{
     background-color: var(--purple-500);
     color: var(--white-300);
     padding: 10px 15px;
@@ -47,7 +52,7 @@ body{
     transition: background-color 0.5s ease;
 }
 
-.buttonHeader:hover{
+.button:hover{
     background-color: var(--purple-200);
     transition: background-color 0.5s ease;
 }
@@ -70,19 +75,20 @@ body{
     margin-bottom: 10px;
 }
 
-#apresentacao p {
+.paragrafo{
     font-size: 1.4rem;
     color: var(--white-300);
 }
 
 .marginContainer{
-    margin: 3% 17%;
+    margin: 8% 17%;
 }
 
 .skillContainer{
     display: flex;
     justify-content: center;
-    gap: 30px
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .skill{
@@ -94,4 +100,83 @@ body{
 .skill h3{
     color: var(--white-300);
     text-align: center;
+}
+
+.htmlColorBorder{
+    border-color: var(--html);
+}
+
+.cssColorBorder{
+    border-color: var(--css);
+}
+
+.jsColorBorder{
+    border-color: var(--js);
+}
+
+.wpColorBorder{
+    border-color: var(--wp);
+}
+
+.formularioContato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border:3px solid var(--purple-500);
+    border-radius: 25px;
+    margin: 0 25%;
+    padding: 35px 0;
+    min-height: 250px;
+    gap: 30px; 
+}
+
+.formularioContato input{
+    color: var(--white-300);
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--white-300);
+    min-width: 260px; 
+    font-size: 1.2rem; 
+}
+
+.formularioContato input::placeholder{
+    color: var(--white-300);
+    font-size: 1.2rem;
+}
+
+.formularioContato textarea{
+    width: 360px;
+    height: 130px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    resize: none;
+    padding: 10px;
+}
+
+.formularioContato button{
+    border: none;
+}
+
+footer{
+    background-color: var(--purple-300);
+}
+
+footer div{
+    margin: 0 10%;
+    padding: 3% 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+footer img{
+    max-width: 50px;
+}
+
+footer a{
+    color: var(--white-300);
+    text-decoration: none;
 }
