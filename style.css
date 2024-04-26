@@ -1,3 +1,6 @@
+
+
+
 :root{
     --white-300: #FFFFFF;
 
@@ -16,6 +19,12 @@
 *{
     font-family: "Montserrat", sans-serif;
 }
+
+html{
+    scroll-behavior: smooth;
+}
+
+
 
 body{
     background-color: var(--black-300);
@@ -81,7 +90,8 @@ body{
 }
 
 .marginContainer{
-    margin: 8% 17%;
+    margin-top: 8%;
+    margin-bottom: 8%;
 }
 
 .skillContainer{
@@ -181,6 +191,7 @@ footer a{
     text-decoration: none;
 }
 
+
 @media (max-width: 767px){
     .containerButtons{
         display: flex;
@@ -190,5 +201,48 @@ footer a{
     .button{
         font-size: 0.9rem;
         margin: 10px 0;
+    }
+
+    #apresentacao, .skillContainer{
+        flex-wrap: wrap;
+    }
+
+    #apresentacao img{
+        width: 100%;
+    }
+
+    .marginContainer{
+        margin: 8% 5%;
+    }
+
+    .skillContainer{
+        gap: 25px;
+    }
+
+    .skill{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 45%;
+        height: 170px;
+    }
+
+    .skill img{
+        width: 110px;
+    }
+
+    .skill h3{
+        width: 65%;
+        font-size: 1.1rem;
+        margin-bottom: 0px;
+    }
+
+    .formularioContato{
+        margin: 0px;
+    }
+
+    .formularioContato textarea{
+        width: 85%;
     }
 }
