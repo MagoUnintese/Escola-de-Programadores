@@ -66,15 +66,8 @@ body{
     transition: background-color 0.5s ease;
 }
 
-#apresentacao {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 40px;
-}
-
 #apresentacao > div {
-    width: 750px;
+    gap: 40px;
 }
 
 .tituloBloco{
@@ -95,21 +88,24 @@ body{
 }
 
 .skillContainer{
-    display: flex;
-    justify-content: center;
-    gap: 30px;
+    gap:15px;
     margin-top: 30px;
 }
 
 .skill{
-    padding: 10px 48.7px;
+    padding: 10px 36.7px;
     border: 2px solid;
     border-radius: 10px;
 }
 
 .skill h3{
     color: var(--white-300);
+    width: 100%;
     text-align: center;
+}
+
+.skill img{
+    width: 100%;
 }
 
 .htmlColorBorder{
@@ -191,6 +187,19 @@ footer a{
     text-decoration: none;
 }
 
+/*Mensagem de Erro*/
+.escrevaMensagem{
+    display: none;
+}
+
+.mensagemVermelha{
+    color: red;
+}
+
+#imgPersonagens{
+    position: relative;
+    left: 600px;
+}
 
 @media (max-width: 767px){
     .containerButtons{
@@ -199,41 +208,26 @@ footer a{
     }
 
     .button{
-        font-size: 0.9rem;
+        font-size: 1rem;
         margin: 10px 0;
-    }
-
-    #apresentacao, .skillContainer{
-        flex-wrap: wrap;
-    }
-
-    #apresentacao img{
-        width: 100%;
-    }
-
-    .marginContainer{
-        margin: 8% 5%;
+        padding: 15px 25px;
     }
 
     .skillContainer{
         gap: 25px;
+        justify-content: center;
     }
 
     .skill{
-        padding: 0px;
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        width: 45%;
-        height: 170px;
+        padding: 10px;
+ 
     }
 
     .skill img{
-        width: 110px;
+        width: 100%;
     }
 
     .skill h3{
-        width: 65%;
         font-size: 1.1rem;
         margin-bottom: 0px;
     }
